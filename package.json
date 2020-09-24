@@ -1,6 +1,6 @@
 {
   "name": "@olafw/v2-lib",
-  "version": "0.1.0--alpha.2",
+  "version": "0.1.0--alpha.3",
   "description": "This library is test version based on Vue 2.x.",
   "keywords": [
     "vue",

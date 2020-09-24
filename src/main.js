@@ -9,21 +9,13 @@
 
 import * as components from './components'
 
-console.log('process', process.env)
-
 const V2Lib = {
   install(Vue, options = {}) {
-    console.log('Vue instance >>', Vue, options)
-    console.log('import components >>', components)
-
     for (const componentName in components) {
       const component = components[componentName]
-      console.log('component >>', component)
       Vue.component(component.name, component)
     }
-
-    // -- Define a global property
-    Vue.VERSION = 'v0.1.0--alpha'
+    console.log('options >>', options)
 
     // -- Create a mixin
     Vue.mixin({
