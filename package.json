@@ -1,15 +1,34 @@
 {
-  "name": "v2-lib",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@olafw/v2-lib",
+  "version": "0.1.0--alpha.1",
+  "description": "This library is test version based on Vue 2.x.",
+  "keywords": [
+    "vue",
+    "lib",
+    "test"
+  ],
+  "author": "Olaf",
+  "license": "MIT",
+  "homepage": "https://github.com/olaf-miracle/v2-lib#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olaf-miracle/v2-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olaf-miracle/v2-lib/issue"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "main": "lib/v2Lib.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name v2Lib src/main.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "core-js": "^3.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -21,5 +40,8 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
   }
 }
