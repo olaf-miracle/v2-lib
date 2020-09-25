@@ -1,3 +1,3 @@
 # v2-lib
 
-This library is test version based on Vue 2.x.
+This library is a test version based on Vue.js 2.x.
