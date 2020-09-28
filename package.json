@@ -24,9 +24,12 @@
   ],
   "main": "lib/v2Lib.umd.min.js",
   "scripts": {
+    "clean": "rm -rf node_modules && rm -rf lib",
+    "init": "yarn clean && yarn install",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name v2Lib src/main.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "node test.js"
   },
   "dependencies": {
     "core-js": "^3.6.5"
