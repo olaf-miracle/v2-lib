@@ -7,11 +7,20 @@
 
 <script>
 export default {
-  name: 'Bulletins',
+  name: 'bulletins',
 
   created () {
     console.log('[Bulletins] created!')
     this.getTime()
+  },
+
+  updated () {
+    console.log('[Bulletins] updated!')
+    this.getTime()
+  },
+
+  destroyed () {
+    console.log('[Bulletins] destroyed! oops')
   },
 
   methods: {

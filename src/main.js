@@ -1,12 +1,3 @@
-// import Vue from 'vue'
-// import Bulletins from './components/Bulletins'
-
-// Vue.config.productionTip = false
-
-// new Vue({
-//   render: h => h(Bulletins),
-// }).$mount('#app')
-
 import * as components from './components'
 
 const V2Lib = {
@@ -20,7 +11,7 @@ const V2Lib = {
     // -- Create a mixin
     Vue.mixin({
       created () {
-        console.log('Vue Instance is created >>', Vue)
+        console.log('A Vue Instance is created >>', Vue)
       }
     })
   }
